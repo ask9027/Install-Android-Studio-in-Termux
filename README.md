@@ -57,7 +57,7 @@ bash android-studio/bin/studio.sh
 ```
 (make sure `java --version` is 11)
    
-when android studio ask to select jdk path , choise downloaded openjdk-11-jdk from /usr/lib/jvm/java-11-openjdk-arm64/
+when android studio ask to select jdk path , choise downloaded openjdk-11-jdk from `/usr/lib/jvm/java-11-openjdk-arm64/`
 
 now it will ask to download emulator , don't download it , uncheck it.
 
