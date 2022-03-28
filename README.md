@@ -104,6 +104,24 @@ source ../usr/etc/bash.bashrc
 
 now Build your project.
 
+
+You can Connect your physical devices over Wi-Fi (android 11+ devices needed).
+
+1. install android-tools in termux
+
+`apt install android-tools`
+
+open phone developer settings and enble install via USB.
+
+need to connect WI-FI.
+
+watch video for further process. [here](https://youtu.be/BHc7uvX34bM)
+
+after devices connected to termux got to Android Studio open device manager and search wifi devices.
+and select available device.
+
+
+
 Hope You did it. 👍🏻
 
 If you encounter any error please first google.
