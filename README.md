@@ -81,7 +81,7 @@ Thats it for Andeoid-Version<12 and Udroid.
 
 **Note:- Make Changes if You want to build project in Termux(use jdk-arm64),Termux at android 12 devices or 32bit Devices use jdk-arm**
 
-need to download jdk [from](https://github.com/itsaky/AndroidIDE/ [to](https://github.com/itsaky/AndroidIDE/)
+need to download jdk [from](https://github.com/itsaky/AndroidIDE/)
 
 and extract all files(jdk, android-sdk,aapt2) in Termux `$HOME`.
 
