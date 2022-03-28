@@ -28,14 +28,12 @@ vncserver :1
 
 download android studio linux tar from [here.](https://developer.android.com/studio)
 
-download android-sdk, jdk, aapt2 from [here](https://androidide.com/) according to your device architecture.
+download android-sdk, aapt2 from [here](https://androidide.com/) according to your device architecture.
    
 and move all files to $HOME directory.
-   
-***Note:- android 12 devices have pointer issue with jdk so you have to download 32 bit build tools.***
 
+extract all downloaded files *(android studio, android-sdk, aapt2)* in $HOME directory.
 
-extract all downloaded files *(android studio, android-sdk, jdk, aapt2)* in $HOME directory.
 Now open terminal and edit .bashrc file .
 ```bash
 nano ~/.bashrc
@@ -59,7 +57,7 @@ bash android-studio/bin/studio.sh
 ```
 (make sure `java --version` is 11)
    
-when android studio ask to select jdk path , choise download jdk from `hippo/home/jdk`
+when android studio ask to select jdk path , choise downloaded openjdk-11-jdk from /usr/lib/jvm/java-11-openjdk-arm64/
 
 now it will ask to download emulator , don't download it , uncheck it.
 
@@ -72,14 +70,37 @@ after downloading click on finish.
 Now Android Studio setup is completed.
 
 ## Now create new project.
+1. Create Project and stop build for now.
+2. Now make change in build.gradle(project level) at `classpath "com.android.tools.build:gradle:(version)` to `classpath "com.android.tools.build:gradle:7.0.2"`
 
-You need to some changes in your project if you are using 32 bit build tools
+Make sure gradle version is 7.3-bin at gradle/wrapper/gradle-wrapper.properties if face some error.
 
-make change in gradle.properties at `'org.gradle.jvmargs=-Xmx2048m'` to `'org.gradle.jvmargs=-Xmx1024m'`
+Now build project.
 
-Now make change in build.gradle(project level) at `classpath "com.android.tools.build:gradle:(version)` to `classpath "com.android.tools.build:gradle:7.0.2"`
+Thats it for Andeoid-Version<12 and Udroid.
 
-Now make change in build.gradle(app level) `compileSdkVersion 31`.
+**Note:- Make Changes if You want to build project in Termux(use jdk-arm64),Termux at android 12 devices or 32bit Devices use jdk-arm**
+
+need to download jdk [from](https://github.com/itsaky/AndroidIDE/ [to](https://github.com/itsaky/AndroidIDE/)
+
+and extract all files(jdk, android-sdk,aapt2) in Termux `$HOME`.
+
+edit bash.bashrc
+
+```bash
+nano ../usr/etc/bash.bashrc
+
+#add these lines
+export JAVA_HOME=$HOME/jdk
+export PATH=$JAVA_HOME/bin:$PATH
+export ANDROID_SDK_ROOT=$HOME/android-sdk
+export GRADLE_USER_HOME=$HOME/.gradle
+
+#run
+source ../usr/etc/bash.bashrc
+```
+
+3. Make change in gradle.properties at `'org.gradle.jvmargs=-Xmx2048m'` to `'org.gradle.jvmargs=-Xmx1024m'`
 
 now Build your project.
 
@@ -88,6 +109,7 @@ Hope You did it. 👍🏻
 If you encounter any error please first google.
 
 **Note:- Layout Manager Not Working.**
+**(Not Tested :- NDK , ADB WIFI)**
 
 **Thanks**
 
@@ -97,3 +119,5 @@ If you encounter any error please first google.
 **for ubuntu [to](https://github.com/RandomCoderOrg/ubuntu-on-android/)**
 
 **for termux [to](https://termux.com/)**
+
+**if someone have more idea plesea add in this repo**
