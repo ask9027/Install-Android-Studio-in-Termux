@@ -127,7 +127,9 @@ Hope You did it. 👍🏻
 If you encounter any error please first google.
 
 **Note:- Layout Manager Not Working.**
-**(Not Tested :- NDK , ADB WIFI)**
+**(Not Tested :- NDK (Official), ADB WIFI)**
+
+**to use NDK, download from [here](https://github.com/Lzhiyong/termux-ndk/releases)**
 
 **Thanks**
 
