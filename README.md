@@ -56,24 +56,14 @@ source ~/.bashrc
 bash android-studio/bin/studio.sh
 ```
 (make sure `java --version` is 11)
-   
-when android studio ask to select jdk path , choise downloaded openjdk-11-jdk from `/usr/lib/jvm/java-11-openjdk-arm64/`
 
-now it will ask to download emulator , don't download it , uncheck it.
-
-and select android-sdk path from `hippo/home/android-sdk`
-
-now click on next button if all things done correctly it will show downloadable files and it's size. now click on next, this will download all required files.
-
-after downloading click on finish.
+Cancel setup wizard and uncheck show agin setup wizard.
 
 Now Android Studio setup is completed.
 
 ## Now create new project.
 1. Create Project and stop build for now.
 2. Now make change in build.gradle(project level) at `classpath "com.android.tools.build:gradle:(version)` to `classpath "com.android.tools.build:gradle:7.0.2"`
-
-Make sure gradle version is 7.3-bin at gradle/wrapper/gradle-wrapper.properties if face some error.
 
 Now build project.
 
