@@ -1,6 +1,6 @@
 # Install-Android-Studio-in-Termux
 
-## First neet to Login to udroid
+## First neet to Login to Ubuntu.
 
 Download and install termux from [here.](https://github.com/termux/termux-app/releases)
 
