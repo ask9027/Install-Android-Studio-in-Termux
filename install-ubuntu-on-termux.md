@@ -4,7 +4,7 @@
 ```bash
 pkg update -y
 apt install x11-repo
-apt install proot-distro && pulseaudio
+apt install proot-distro pulseaudio
 ```
 
 ## After installation of `proot-distro` install ubuntu by following cammands.
