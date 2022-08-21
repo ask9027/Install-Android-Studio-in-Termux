@@ -32,7 +32,7 @@ apt install sudo gvfs-daemons xfce4 xfce4-terminal thunar-archive-plugin ffmpeg 
 
 ## After all set login ubuntu to added user
 ```
-pulseaudio --start --load ="module-native-protocal-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
 proot-distro login --user username ubuntu --shared-tmp --bind /dev/null:/proc/sys/kernel/cap_last_cap
 ```
 
