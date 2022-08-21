@@ -22,8 +22,7 @@ xdg-open ~/app-debug.apk
 ## Now run following commands to launch termux-11 and give permissions.
 
 ```
-export XDG_RUNTIME_DIR=${TMPDIR}
-termux-11 :1 &
+XDG_RUNTIME_DIR=$PREFIX/bin termux-x11 -ac :1 > /dev/null &
 ```
 
 ## To Run ubuntu in GUI Mode, login to Ubuntu and run following commands
