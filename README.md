@@ -62,7 +62,7 @@ Now Android Studio setup is completed.
 
 ### Note:- there is an error to build apk in this process to fix it use following commands.
 
-### to fix aapt2 error go to [this] (https://github.com/Lzhiyong/termux-ndk/issues/106#issuecomment-1133898302) link.
+### to fix aapt2 error go to [this](https://github.com/Lzhiyong/termux-ndk/issues/106#issuecomment-1133898302) link.
 
 
 ### Hope You did it.
