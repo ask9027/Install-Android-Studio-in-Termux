@@ -61,10 +61,8 @@ Cancel setup wizard and uncheck show agin setup wizard.
 Now Android Studio setup is completed.
 
 ### Note:- there is an error to build apk in this process to fix it use following commands.
-```
-jar -uvf ~/.gradle/caches/modules-2/files-2.1/com.android.tools.build/aapt2/7.4.0-alpha08-8691043/4d0af64ff88429650487ab88d3ee411a6b5955c6/aapt2-7.4.0-alpha08-8691043-linux.jar ~/Android/Sdk/build-tools/33.0.0/aapt2
-```
-### Note :- Replace `aapt2-7.4.0-alpha08-8691043` with that you are using and you can also replace build-tools version with another.
+
+### to fix aapt2 error go to [this] (https://github.com/Lzhiyong/termux-ndk/issues/106#issuecomment-1133898302) link.
 
 
 ### Hope You did it.
