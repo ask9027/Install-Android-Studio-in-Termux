@@ -17,7 +17,7 @@ apt install proot-distro pulseaudio
 ## After login run following commands
 ```bash
 apt update -y
-apt install sudo gvfs-daemons xfce4 xfce4-terminal thunar-archive-plugin ffmpeg tzdata apt-utils xz-utils vim
+apt install sudo gvfs-daemons xfce4 xfce4-terminal thunar-archive-plugin ffmpeg tzdata apt-utils xz-utils vim dbus-x11
 ```
 
 ## After all installed , Create user and password
