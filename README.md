@@ -10,7 +10,7 @@ install ubuntu from [here.](install-ubuntu-on-termux.md)
 
 ## update and install jdk-11
 
-```bash
+```
 sudo apt update
 sudo apt install openjdk-11-jdk -y
 ```
@@ -25,25 +25,24 @@ sudo apt install openjdk-11-jdk -y
 download android studio linux tar from [here.](https://developer.android.com/studio)
 
 
-Download android-sdk for `arm64` from [here](
-https://github.com/itsaky/androidide-build-tools/releases/download/v33.0.1/android-sdk-33.0.1-aarch64.tar.xz)
+Download android-sdk and cmdline-tools from [here](https://github.com/AndroidIDEOfficial/androidide-tools/releases/tag/sdk).
 
-for `arm` from [here](
-https://github.com/itsaky/androidide-build-tools/releases/download/v33.0.1/android-sdk-33.0.1-arm.tar.xz)
+Also Download build-tools and platform-tools from [here](https://github.com/AndroidIDEOfficial/androidide-tools/releases/tag/sdk) according to your devices `arch`.
 
 
 Now Create `Android` directory in Ubuntu `$HOME` directory
-and extract android-studio and android-sdk to ubuntu `$HOME/Android/` directory.
+and extract android-studio,android-sdk into ubuntu `$HOME/Android/` directory
+and extract cmdline-tools, build-tools and platform-tools in `$HOME/Android/android-sdk/` dir.
 
-
+#
 Now open terminal and edit .bashrc file .
-```bash
+```
 nano ~/.bashrc
 ```
 add these lines to .bashrc
 
-```bash
-export ANDROID_SDK_ROOT=$HOME/Android/android-sdk
+```
+export ANDROID_HOME=$HOME/Android/android-sdk
 ```
 save it.
 
@@ -51,6 +50,7 @@ run this in terminal.
 ```bash 
 source ~/.bashrc
 ```
+#
 ## Now run android studio 
 
 `bash ~/Android/android-studio/bin/studio.sh`
@@ -68,10 +68,10 @@ Now Android Studio setup is completed.
 ### Hope You did it.
 
 If you encounter any error please first google.
-
+#
 **Note:- Layout Manager Not Working.**
 **(Tested and Working:- NDK , ADB WI-FI)**
 
 **to use NDK, download from [here](https://github.com/Lzhiyong/termux-ndk/releases)**
-
-## Thanks
+#
+## $Thanks$

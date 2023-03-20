@@ -19,19 +19,23 @@ xdg-open ~/app-debug.apk
 
 ### Note:- You can install termux-x11 on your way. Give apk install permission to termux to install apk.
 
-## Now run following commands to launch termux-11 and give permissions.
+## Now run following commands to make termux-11 usable.
 
 ```
-XDG_RUNTIME_DIR=$PREFIX/bin termux-x11 -ac :1 > /dev/null &
+DISPLAY=:0 termux-x11 &
 ```
 
 ## To Run ubuntu in GUI Mode, login to Ubuntu and run following commands
+before ubuntu in GUI Mode install `xvfb` in ubuntu.
+`sudo apt install xvfb`
+Now you good to go 
 ```
-unset SESSION_MANAGER
-unset DBUS_SESSION_ADDRESS
 export PULSE_SERVER=127.0.0.1
-clear
-env DISPLAY=:1 xfce4-session &
+export DISPLAY=:0
+Xvfb :0 -ac -screen 0 4090x4090x24 &
+dbus-launch --exit-with-session startxfce4 &
 ```
+
+### ***Note:-*** Don't try to change screen height or width otherwise display don't work properly.
 
 ## That's it for Termux-x11
