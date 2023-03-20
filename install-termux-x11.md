@@ -2,7 +2,7 @@
 
 ## Install Termux-x11 by following commands
 
-```
+```bash
 apt update
 apt install x11-repo
 apt install xwayland
@@ -11,7 +11,7 @@ apt install xwayland
 
 ### after download extract download file in Termux `$Home` and run following commands
 
-```
+```bash
 unzip termux-x11.zip
 dpkg -i ~/termux-x11.deb
 xdg-open ~/app-debug.apk
@@ -21,7 +21,7 @@ xdg-open ~/app-debug.apk
 
 ## Now run following commands to make termux-11 usable.
 
-```
+```bash
 DISPLAY=:0 termux-x11 &
 ```
 
@@ -29,7 +29,7 @@ DISPLAY=:0 termux-x11 &
 before ubuntu in GUI Mode install `xvfb` in ubuntu.
 `sudo apt install xvfb`
 Now you good to go 
-```
+```bash
 export PULSE_SERVER=127.0.0.1
 export DISPLAY=:0
 Xvfb :0 -ac -screen 0 4090x4090x24 &

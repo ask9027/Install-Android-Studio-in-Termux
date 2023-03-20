@@ -10,7 +10,7 @@ install ubuntu from [here.](install-ubuntu-on-termux.md)
 
 ## update and install jdk-11
 
-```
+```bash
 sudo apt update
 sudo apt install openjdk-11-jdk -y
 ```
@@ -36,12 +36,12 @@ and extract cmdline-tools, build-tools and platform-tools in `$HOME/Android/andr
 
 #
 Now open terminal and edit .bashrc file .
-```
+```bash
 nano ~/.bashrc
 ```
 add these lines to .bashrc
 
-```
+```bash
 export ANDROID_HOME=$HOME/Android/android-sdk
 ```
 save it.
