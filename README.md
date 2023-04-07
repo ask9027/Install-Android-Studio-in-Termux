@@ -27,7 +27,7 @@ download android studio linux tar from [here.](https://developer.android.com/stu
 
 Download android-sdk and cmdline-tools from [here](https://github.com/AndroidIDEOfficial/androidide-tools/releases/tag/sdk).
 
-Also Download build-tools and platform-tools from [here](https://github.com/AndroidIDEOfficial/androidide-tools/releases/tag/sdk) according to your devices `arch`.
+Also Download build-tools and platform-tools from [here](https://github.com/AndroidIDEOfficial/androidide-tools/releases/tag/v33.0.3) according to your devices `arch`.
 
 
 Now Create `Android` directory in Ubuntu `$HOME` directory
