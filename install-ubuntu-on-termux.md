@@ -14,7 +14,7 @@ apt install proot-distro pulseaudio
 ## now login to ubuntu
 `proot-distro login ubuntu`
 
-## After login run following commands
+## After login run following commands to install `xfce4` desktop Env.
 ```bash
 apt update -y
 apt install sudo gvfs-daemons xfce4 xfce4-terminal thunar-archive-plugin ffmpeg tzdata apt-utils xz-utils vim dbus-x11
