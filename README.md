@@ -12,10 +12,10 @@ install ubuntu from [here.](install-ubuntu-on-termux.md)
 
 ```bash
 sudo apt update
-sudo apt install openjdk-11-jdk -y
+sudo apt install openjdk-11-jdk -y # or openjdk-17-jdk
 ```
 ## GUI Mode (need to Termux-x11 installed) 
-### Install Termux-x11 from [here.](install-termux-x11.md)
+### Install Termux-x11 from [here.](https://github.com/termux/termux-x11.git)
 
 #
 ## Setup Android Studio
@@ -54,7 +54,6 @@ source ~/.bashrc
 ## Now run android studio 
 
 `bash ~/Android/android-studio/bin/studio.sh`
-(make sure `java --version` is 11)
 
 Cancel setup wizard and uncheck show agin setup wizard.
 
